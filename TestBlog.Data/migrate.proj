@@ -1,0 +1,48 @@
+﻿<?xml version="1.0"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Migrate">
+  <PropertyGroup>
+    <MigratorTasksPath>..\tools\migrations</MigratorTasksPath>
+  </PropertyGroup>
+
+  <UsingTask TaskName="FluentMigrator.MSBuild.Migrate"
+       AssemblyFile="..\tools\migrations\FluentMigrator.MSBuild.dll"/>
+
+  <Target Name="Migrate" >
+    <Message Text="Starting TestBlog Migration"/>
+
+    <!-- The dll must be located where dotnet assembly loader can find it (same folder as the fluentmigrator dlls) -->
+    <Copy SourceFiles="bin/debug/TestBlog.Data.dll" DestinationFolder="$(MigratorTasksPath)"/>
+    <!-- Important: Target must be your Migrations assembly name, not your dll file name.  -->
+    <Migrate Database="sqlserver"
+             Connection="Server=.\SQLExpress;Database=TestBlog;Integrated Security=SSPI;"
+             Target="TestBlog.Data">
+    </Migrate>
+  </Target>
+
+  <Target Name="MigrateRollback" >
+    <Message Text="Starting TestBlog Migration Rollback"/>
+
+    <!-- The dll must be located where dotnet assembly loader can find it (same folder as the fluentmigrator dlls) -->
+    <Copy SourceFiles="bin/debug/TestBlog.Data.dll" DestinationFolder="$(MigratorTasksPath)"/>
+    <!-- Important: Target must be your Migrations assembly name, not your dll file name.  -->
+    <Migrate Database="sqlserver"
+             Connection="Server=.\SQLExpress;Database=TestBlog;Integrated Security=SSPI;"
+             Target="TestBlog.Data"
+			 Task="rollback">
+    </Migrate>
+  </Target>
+
+  <Target Name="MigrateRollbackAll" >
+    <Message Text="Starting TestBlog Migration Rollback All"/>
+
+    <!-- The dll must be located where dotnet assembly loader can find it (same folder as the fluentmigrator dlls) -->
+    <Copy SourceFiles="bin/debug/TestBlog.Data.dll" DestinationFolder="$(MigratorTasksPath)"/>
+    <!-- Important: Target must be your Migrations assembly name, not your dll file name.  -->
+    <Migrate Database="sqlserver"
+               Connection="Server=.\SQLExpress;Database=TestBlog;Integrated Security=SSPI;"
+               Target="TestBlog.Data"
+         Task="rollback:all">
+    </Migrate>
+  </Target>
+
+</Project>

@@ -31,14 +31,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Migrator">
-      <HintPath>..\packages\MigratorDotNet.0.9.0.33276\lib\NET40\Migrator.dll</HintPath>
+    <Reference Include="FluentMigrator">
+      <HintPath>..\packages\FluentMigrator.1.0.1.0\lib\40\FluentMigrator.dll</HintPath>
     </Reference>
-    <Reference Include="Migrator.Framework">
-      <HintPath>..\packages\MigratorDotNet.0.9.0.33276\lib\NET40\Migrator.Framework.dll</HintPath>
-    </Reference>
-    <Reference Include="Migrator.Providers">
-      <HintPath>..\packages\MigratorDotNet.0.9.0.33276\lib\NET40\Migrator.Providers.dll</HintPath>
+    <Reference Include="FluentMigrator.MSBuild">
+      <HintPath>..\packages\FluentMigrator.Tools.1.0.1.0\tools\AnyCPU\40\FluentMigrator.MSBuild.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,13 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\_001_Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="migrate.proj" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Migrations\" />
+    <Content Include="InstallationDummyFile.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
