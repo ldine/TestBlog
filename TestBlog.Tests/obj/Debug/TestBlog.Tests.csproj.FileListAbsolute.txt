@@ -1,0 +1,9 @@
+D:\Loz's Documents\Development\MVC\TestBlog\TestBlog.Tests\bin\Debug\TestBlog.Tests.dll
+D:\Loz's Documents\Development\MVC\TestBlog\TestBlog.Tests\bin\Debug\TestBlog.Tests.pdb
+D:\Loz's Documents\Development\MVC\TestBlog\TestBlog.Tests\bin\Debug\Iesi.Collections.dll
+D:\Loz's Documents\Development\MVC\TestBlog\TestBlog.Tests\bin\Debug\NHibernate.dll
+D:\Loz's Documents\Development\MVC\TestBlog\TestBlog.Tests\bin\Debug\Iesi.Collections.xml
+D:\Loz's Documents\Development\MVC\TestBlog\TestBlog.Tests\bin\Debug\NHibernate.xml
+D:\Loz's Documents\Development\MVC\TestBlog\TestBlog.Tests\obj\Debug\ResolveAssemblyReference.cache
+D:\Loz's Documents\Development\MVC\TestBlog\TestBlog.Tests\obj\Debug\TestBlog.Tests.dll
+D:\Loz's Documents\Development\MVC\TestBlog\TestBlog.Tests\obj\Debug\TestBlog.Tests.pdb
