@@ -1,5 +1,0 @@
-D:\Loz's Documents\Development\MVC\TestBlog\TestBlog.Domain\bin\Debug\TestBlog.Domain.dll
-D:\Loz's Documents\Development\MVC\TestBlog\TestBlog.Domain\bin\Debug\TestBlog.Domain.pdb
-D:\Loz's Documents\Development\MVC\TestBlog\TestBlog.Domain\obj\Debug\ResolveAssemblyReference.cache
-D:\Loz's Documents\Development\MVC\TestBlog\TestBlog.Domain\obj\Debug\TestBlog.Domain.dll
-D:\Loz's Documents\Development\MVC\TestBlog\TestBlog.Domain\obj\Debug\TestBlog.Domain.pdb

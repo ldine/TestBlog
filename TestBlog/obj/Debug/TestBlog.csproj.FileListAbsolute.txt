@@ -1,7 +1,0 @@
-D:\Loz's Documents\Development\MVC\TestBlog\TestBlog\bin\TestBlog.dll
-D:\Loz's Documents\Development\MVC\TestBlog\TestBlog\bin\TestBlog.pdb
-D:\Loz's Documents\Development\MVC\TestBlog\TestBlog\bin\EntityFramework.dll
-D:\Loz's Documents\Development\MVC\TestBlog\TestBlog\bin\EntityFramework.xml
-D:\Loz's Documents\Development\MVC\TestBlog\TestBlog\obj\Debug\ResolveAssemblyReference.cache
-D:\Loz's Documents\Development\MVC\TestBlog\TestBlog\obj\Debug\TestBlog.dll
-D:\Loz's Documents\Development\MVC\TestBlog\TestBlog\obj\Debug\TestBlog.pdb

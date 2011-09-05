@@ -1,8 +1,0 @@
-D:\Loz's Documents\Development\MVC\TestBlog\TestBlog.Data\bin\Debug\TestBlog.Data.dll
-D:\Loz's Documents\Development\MVC\TestBlog\TestBlog.Data\bin\Debug\TestBlog.Data.pdb
-D:\Loz's Documents\Development\MVC\TestBlog\TestBlog.Data\bin\Debug\Migrator.dll
-D:\Loz's Documents\Development\MVC\TestBlog\TestBlog.Data\bin\Debug\Migrator.Framework.dll
-D:\Loz's Documents\Development\MVC\TestBlog\TestBlog.Data\bin\Debug\Migrator.Providers.dll
-D:\Loz's Documents\Development\MVC\TestBlog\TestBlog.Data\obj\Debug\ResolveAssemblyReference.cache
-D:\Loz's Documents\Development\MVC\TestBlog\TestBlog.Data\obj\Debug\TestBlog.Data.dll
-D:\Loz's Documents\Development\MVC\TestBlog\TestBlog.Data\obj\Debug\TestBlog.Data.pdb
