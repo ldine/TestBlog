@@ -1,0 +1,17 @@
+﻿@helper Css(string cssName){
+   <link href="@GetDomain()/Content/Stylesheets/@cssName" rel="Stylesheet" type="text/css" />
+}
+
+@helper Image(string imageFileUrl, string altText){
+    <img src="@GetDomain()/Content/Images/@imageFileUrl" alt="@altText" />
+}
+
+@helper Script(string scriptFileUrl){
+    <script src="@GetDomain()/Content/Scripts/@scriptFileUrl" language="javascript" type="text/javascript"></script>
+}
+
+@functions{
+    public static string GetDomain(){
+        return Request.Url.Scheme + "://" + Request.Url.Authority;
+    }
+}
